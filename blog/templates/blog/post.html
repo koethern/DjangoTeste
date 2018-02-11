@@ -1,0 +1,15 @@
+{% extends "personal/header.html" %}
+{% block content %}
+	<div class="jumbotron">
+		<h3>{{post.title}}</h3>
+		<span class="badge badge-secondary">publicado em {{post.date|date:"d/m/Y"}}</span>
+		<hr>
+		{{post.body|safe|linebreaks}}
+		<br>
+		<hr>
+		<div>
+			<a class="btn btn-info " href="/blog/" role="button">Voltar</a>
+		<div>
+		
+	</div>
+{% endblock %}
